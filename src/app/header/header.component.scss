@@ -1,0 +1,207 @@
+$yellow-color : #FDB81C;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.nav1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.search input:first-child {
+    height: 25px;
+    border-radius: 0;
+    border: 1px solid gray;
+    padding-left: 5px;
+}
+
+.search i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.btns {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 0 10px;
+}
+
+.login-btn {
+    border: 2px solid gray;
+    color: gray;
+    border-radius: 20px;
+    padding: 2px 5px;
+}
+
+.contect-btn {
+    border: 2px solid $yellow-color;
+    color: $yellow-color;
+    border-radius: 20px;
+    padding: 2px 5px;
+    flex-shrink: 0;
+}
+
+.cart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $yellow-color;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.cart-btn i {
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+
+@media (width < 900px) {
+    .nav1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: fit-content;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 10px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+}
+
+
+.nav2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 8px calc(100% - 95%);
+    flex-wrap: wrap;
+}
+
+.nav2 a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    user-select: none;
+}
+
+ details {
+    position: relative;
+}
+ details:hover,details.active{
+    color: $yellow-color;
+}
+ details[open]{
+    color: $yellow-color;
+}
+
+
+ details summary {
+    list-style: none;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+ details summary i {
+    margin-left: 6px;
+    padding-left: -20px;
+    font-size: 10px;
+    transform: rotate(0deg);
+    transition: all 0.1s ease-in-out ;
+}
+ details[open]  > summary i {
+    transition: all 0.1s ease-in-out ;
+    transform: rotate(90deg);
+}
+ details ul {
+    position: absolute;
+    top: 25px;
+    left: -5px;
+    background-color: white;
+    color: black;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+details ul li a{
+    color: black;
+}
+
+
+ details ul li {
+    padding: 10px 30px;
+    list-style: none;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    cursor: pointer;
+    width: 100%;
+    text-wrap: nowrap;
+    user-select: none;
+}
+
+ details ul li:hover {
+    width: 100%;
+    background-color: #e6e6e6;
+}
