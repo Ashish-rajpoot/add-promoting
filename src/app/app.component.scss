@@ -1,0 +1,18 @@
+#nav{
+    background-color: white;
+    z-index: 1;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.main::-webkit-scrollbar{
+    width: calc(100% - 20%);
+
+}
+.content{
+    height: max-content;
+    background-color: #e7e7e7;
+    display: flex;
+}
+

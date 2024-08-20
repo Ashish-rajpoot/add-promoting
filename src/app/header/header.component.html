@@ -16,49 +16,49 @@
 </nav>
 <nav class="nav2">
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
-        <summary routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</summary>
+        <summary routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page" [queryParams]="{name:'all'}">Home</summary>
     </details>
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
-        <summary>Just Arrived</summary>
+        <summary routerLink="brands" [queryParams]="{name:'latest'}">Just Arrived</summary>
     </details>
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
-        <summary routerLink="brands">
+        <summary routerLink="brands" routerLink="brands" [queryParams]="{name:'all'}">
             Brands <i class="fa-solid fa-greater-than"></i>
         </summary>
         <ul>
-            <li routerLink="brands">Dr vidyas</li>
-            <li routerLink="brands">lakme</li>
+            <li routerLink="brands" [queryParams]="{name:'vidyas'}">Dr vidyas</li>
+            <li routerLink="brands" [queryParams]="{name:'lakme'}">lakme</li>
         </ul>
     </details>
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
         <summary>Home & Kitchen<i class="fa-solid fa-greater-than"></i></summary>
         <ul>
-            <li routerLink="brands/Bakeware">Bakeware</li>
-            <li routerLink="brands/water-bottels">water bottels</li>
-            <li routerLink="brands/oven">oven</li>
-            <li routerLink="brands/toster">toster</li>
-            <li routerLink="brands/Decor">Decor</li>
+            <li routerLink="brands" [queryParams]="{name:'Bakeware'}">Bakeware</li>
+            <li routerLink="brands" [queryParams]="{name:'water-bottels'}">water bottels</li>
+            <li routerLink="brands" [queryParams]="{name:'oven'}">oven</li>
+            <li routerLink="brands" [queryParams]="{name:'toster'}">toster</li>
+            <li routerLink="brands" [queryParams]="{name:'Decor'}">Decor</li>
         </ul>
     </details>
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
-        <summary>Cleaning Supplies</summary>
+        <summary  routerLink="brands" [queryParams]="{name:'cleaning-supply'}">Cleaning Supplies</summary>
     </details>
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
-        <summary>Bags<i class="fa-solid fa-greater-than"></i></summary>
+        <summary routerLink="brands" [queryParams]="{name:'bags'}">Bags<i class="fa-solid fa-greater-than"></i></summary>
         <ul>
-            <li routerLink="brands">linch bag</li>
-            <li routerLink="brands">travel</li>
-            <li routerLink="brands">shopping bag</li>
+            <li routerLink="brands" [queryParams]="{name:'lingh-bag'}">linch bag</li>
+            <li routerLink="brands" [queryParams]="{name:'travel-bag'}">travel</li>
+            <li routerLink="brands" [queryParams]="{name:'shopping-bag'}">shopping bag</li>
         </ul>
     </details>
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
         <summary>Baby & Kids<i class="fa-solid fa-greater-than"></i></summary>
         <ul>
-            <li routerLink="brands">baby care</li>
-            <li routerLink="brands">kids toys</li>
+            <li routerLink="brands" [queryParams]="{name:'baby-care'}">baby care</li>
+            <li routerLink="brands" [queryParams]="{name:'toys'}">kids toys</li>
         </ul>
     </details>
-    <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
+    <!-- <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
         <summary>more<i class="fa-solid fa-greater-than"></i></summary>
         <ul>
             <li routerLink="brands/a">a</li>
@@ -68,15 +68,15 @@
             <li routerLink="brands/e">e</li>
             <li routerLink="brands/f">f</li>
         </ul>
+    </details> -->
+    <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
+        <summary routerLink="brands" [queryParams]="{name:'offers'}">offers</summary>
     </details>
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
-        <summary>offers</summary>
+        <summary routerLink="brands" [queryParams]="{name:'Inquiry'}">Wholesale Inquiry</summary>
     </details>
     <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
-        <summary>Wholesale Inquiry</summary>
-    </details>
-    <details (mouseover)="mouseOver($event)" (mouseleave)="mouseLeave($event)">
-        <summary>Sell to us</summary>
+        <summary routerLink="brands" [queryParams]="{name:'sell-to-us'}">Sell to us</summary>
     </details>
 
 

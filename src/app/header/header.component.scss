@@ -5,6 +5,7 @@ $yellow-color : #FDB81C;
     padding: 0;
     box-sizing: border-box;
     font-weight: 600;
+    z-index: 9999;
 }
 
 .nav1 {
@@ -175,8 +176,9 @@ $yellow-color : #FDB81C;
     transform: rotate(90deg);
 }
  details ul {
+    z-index: 9999;
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: -5px;
     background-color: white;
     color: black;
@@ -190,7 +192,7 @@ details ul li a{
 }
 
 
- details ul li {
+details ul li {
     padding: 10px 30px;
     list-style: none;
     font-size: 1.1rem;
@@ -199,9 +201,12 @@ details ul li a{
     width: 100%;
     text-wrap: nowrap;
     user-select: none;
+    z-index: 9999;
 }
 
- details ul li:hover {
+details ul li:hover {
     width: 100%;
     background-color: #e6e6e6;
+    backface-visibility: hidden;
+    z-index: 9999;
 }
